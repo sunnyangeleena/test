@@ -3,7 +3,12 @@ pipeline {
 	stages {
 		stage('Java Compile') {
 			steps {
-				echo "HI ANGELENNA"
+				sh "javac Test.java"
+			}
+		}
+		stage('Java Run') {
+			steps {
+				sh "java Test"
 			}
 		}
         	
